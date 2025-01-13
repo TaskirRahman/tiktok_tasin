@@ -1,0 +1,167 @@
+.video-list {
+  display: flex;
+  flex-direction: raw;
+  /* align-items: center; */
+  gap: 20px;
+  padding: 20px;
+  background-color:rgb(254, 213, 220);
+}
+
+/* Center the video card with padding on larger screens */
+.video-card {
+  width: 100%;
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 15px;
+  background-color: #f0b6b6 !important;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+video {
+  width: 100%;
+  max-width: 100%;
+  height: 200px;
+  border-radius: 8px;
+}
+
+.video-info {
+  padding: 10px 0;
+}
+
+.video-title {
+  font-size: 1.2rem;
+  margin: 5px 0;
+}
+
+.video-description {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.video-actions {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.action-btn {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  color: #555;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.action-btn svg {
+  margin-right: 5px;
+}
+
+.action-btn:hover {
+  color: #007bff;
+}
+
+@media (max-width: 600px) {
+  .video-card {
+    padding: 10px;
+  }
+
+  .video-title {
+    font-size: 1rem;
+  }
+
+  .video-description {
+    font-size: 0.85rem;
+  }
+
+  .action-btn {
+    font-size: 0.85rem;
+  }
+}
+/* comment */
+/* Style for the comment box */
+.comment-box {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.comment-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  resize: none;
+  box-sizing: border-box;
+}
+
+.comment-input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.send-btn {
+  padding: 10px 15px;
+  font-size: 14px;
+  color: white;
+  background-color: #dd4b39;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  align-self: flex-end;
+  transition: background-color 0.3s ease;
+}
+
+.send-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Style for comments section */
+.comments-section {
+  margin-top: 15px;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+}
+
+.comment {
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.comment:last-child {
+  border-bottom: none;
+}
+
+.comment strong {
+  color: #333;
+  font-weight: bold;
+}
+
+.comment p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .send-btn {
+    width: 100%;
+    align-self: stretch;
+  }
+
+  .comment-box {
+    gap: 5px;
+  }
+}
